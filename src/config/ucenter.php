@@ -1,40 +1,3 @@
-## Ucenter Client For Laravel5+
-
-说明：本项目在 https://github.com/noxue/ucenter 项目的基础上做了修改。
-
-原项目不存在手机号字段，所以加入手机号字段。
-
-运行命令：
-~~~
-composer require ershimei/ucenter:dev-master
-~~~
-
-安装完后，在 `app/config/app.php` 文件中找到 `providers` 键，
-
-~~~
-'providers' => [
-
-    'Ershimei\Ucenter\UcenterServiceProvider'
-
-]
-~~~
-
-找到 `aliases` 键，
-
-~~~
-'aliases' => [
-
-    'Ucenter' => 'Ershimei\Ucenter\Facades\Ucenter'
-
-]
-~~~
-
-## 配置文件
-运行以下命令发布配置文件
-
-创建 `config/ucenter.php` 写入以下内容：
-
-```
 <?php
 
 /**
@@ -64,24 +27,3 @@ return [
     //这里如果要异步登陆，可以直接继承这个类实现其中的方法，也可以创建app/Service/Ucenter.php(文件放哪里都可以，这里只是推荐) 实现该类实现的接口【*】
     'service'        => env('UC_SERVICE', 'Noxue\Ucenter\Services\Api'),
 ];
-
-```
-
-## 路由
-
-在`routes/web.php`中写入:
-
-`Ucenter::routes();`
-
-这个会添加一个api地址，用于同步登陆和退出
-
-## 使用
-例如：获取用户名为admin的信息
-~~~
-$result = Ucenter::uc_get_user('admin');
-var_dump($result);
-~~~
-
-
-## 联系我
-有问题，请提交issue
