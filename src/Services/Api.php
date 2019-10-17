@@ -1,8 +1,8 @@
-<?php namespace Noxue\Ucenter\Services;
+<?php namespace Ershimei\Ucenter\Services;
 
-use Noxue\Ucenter\Services\Help;
+use Ershimei\Ucenter\Services\Help;
 
-class Api implements \Noxue\Ucenter\Contracts\Api
+class Api implements \Ershimei\Ucenter\Contracts\Api
 {
     use Help;
 

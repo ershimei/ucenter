@@ -1,4 +1,4 @@
-<?php namespace Noxue\Ucenter\Contracts;
+<?php namespace Ershimei\Ucenter\Contracts;
 
 interface Api
 {

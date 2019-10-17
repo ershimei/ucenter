@@ -1,6 +1,6 @@
 {
     "name": "ershimei/ucenter",
-    "description": "ucenter client for laravel5+",
+    "description": "ucenter client for laravel5.7+",
     "license": "MIT",
     "authors": [
         {

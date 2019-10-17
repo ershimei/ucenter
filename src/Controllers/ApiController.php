@@ -1,9 +1,9 @@
-<?php namespace Noxue\Ucenter\Controllers;
+<?php namespace Ershimei\Ucenter\Controllers;
 
 use App\Http\Controllers\Controller;
-use Noxue\Ucenter\Contracts\Api;
+use Ershimei\Ucenter\Contracts\Api;
 use Request,Config;
-use Noxue\Ucenter\Services\Help;
+use Ershimei\Ucenter\Services\Help;
 
 class ApiController extends Controller 
 {
