@@ -18,7 +18,7 @@
         "php": ">=5.4.0"
     },
     "require-dev": {
-        "codeception/codeception": "~1.0",
+        "codeception/codeception": "1.8.7",
         "mockery/mockery": "0.9.*",
         "fzaninotto/faker": "~1.0"
     },
