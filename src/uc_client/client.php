@@ -322,14 +322,15 @@ function uc_user_synlogout() {
 	if(@include UC_ROOT.'./data/cache/apps.php') {
 		if(count($_CACHE['apps']) > 0) {
 			$return = uc_api_post('user', 'synlogout', array());
-		} else {
+		} else {;
+
 			$return = '';
 		}
 	}
-	return $return;
+	return $return
 }
 
-function uc_user_edit($username, $oldpw, $newpw, $email, $mobile $ignoreoldpw = 0, $questionid = '', $answer = '') {
+function uc_user_edit($username, $oldpw, $newpw, $email, $mobile, $ignoreoldpw = 0, $questionid = '', $answer = '') {
 	return call_user_func(UC_API_FUNC, 'user', 'edit', array('username'=>$username, 'oldpw'=>$oldpw, 'newpw'=>$newpw, 'email'=>$email, 'mobile'=>$mobile, 'ignoreoldpw'=>$ignoreoldpw, 'questionid'=>$questionid, 'answer'=>$answer));
 }
 
