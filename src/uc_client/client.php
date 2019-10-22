@@ -327,7 +327,7 @@ function uc_user_synlogout() {
 			$return = '';
 		}
 	}
-	return $return
+	return $return;
 }
 
 function uc_user_edit($username, $oldpw, $newpw, $email, $mobile, $ignoreoldpw = 0, $questionid = '', $answer = '') {
